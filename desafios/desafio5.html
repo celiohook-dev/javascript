@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio5</title>
+    <style>
+    #dolar{
+        background-color: lightgrey;
+        width: 250px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    .f{
+        font-size: 50px;
+    }
+
+
+</style>
+</head>
+<body>
+    <div id="dolar" onclick="dolar()"> Conversão Dolar para real</div>
+    <div id="res"></div>
+    <p>Clique no botão acima para iniciar.</p>
+
+    <script>
+     function dolar () {
+      let dolar = window.prompt("Antes de mais nada. Quanto está a cotação do dolar agora? ")
+      let res= document.getElementById("res")
+      let real=window.prompt("Quantos R$ voçe na carteira?")
+
+      let cotacao = dolar * real
+
+      res.innerHTML=(`Voçe tem ${cotacao} R$ para gastar!`)
+
+
+
+     }
+     
+
+    </script>
+</body>
+</html>

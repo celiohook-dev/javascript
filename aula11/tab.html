@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+
+        body{
+            font: normal 15pt arial;
+            background-color: cadetblue;
+        }
+        div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+
+    <p>Digite um número: <input type="number" name="n1" id="n1"> <input type="button" value="Gerar" onclick="Gerar()"></p>
+    <div id="res"></div>
+
+
+    <script>
+
+        function Gerar( ) {
+            let num = window.document.getElementById('n1')
+            let  res = window.document.getElementById('res')
+
+            let n = Number(n1.value)
+            res.innerHTML=''
+
+            for (let c = 1; c <=10; c++) {
+                let r = c * n
+                res.innerHTML+=`${n} * ${c} = ${r}<br>`
+            }
+
+
+
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

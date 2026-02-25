@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio4</title>
+    <style>
+        body{
+           background-color:cornflowerblue
+        }
+        #d1{
+            background-color: lightgrey;
+            width: 250px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        .f{
+            font-size: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Conversor de Temperaturas</h1>
+
+    <div id="d1" onclick="conversor()"> Converter  </div >
+        <br>
+        <div id="res">  </div>
+        <div id="r" class="f"></div>
+        <br>
+        <div id="re" class="f"></div>
+
+       <script>
+
+        function conversor(){
+            let t = window.prompt("Digite uma temperatura em *C(Celsius)")
+            let r = window.document.getElementById("r")
+            let re = window.document.getElementById('re')
+            let res = window.document.getElementById("res")
+
+            res.innerHTML=(`<h1> A temperatura de ${t} corresponde a .....</h1>`)
+             
+           
+            let f =(t * 9/5) + 32
+            let c = f+273.15
+           
+
+            r.innerHTML= (f)
+            re.innerHTML= (c)
+
+            
+
+
+
+
+
+        }
+
+
+       </script> 
+</body>
+</html>

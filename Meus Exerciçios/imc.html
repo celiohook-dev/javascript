@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cálculo de IMC</h1>
+    Peso(kg) <input type="number" name="txtp" id="txtp"> 
+    Altura (m) <input type="number" name="txta" id="txta">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">Resultado</div> 
+</body>
+
+</html>
+
+<script>
+    function verificar () {
+
+    var peso = window.document.getElementById('txtp')
+    var altura = window.document.getElementById('txta')
+    var res = window.document.getElementById('res')
+   var p = Number(txtp.value)
+   var a = Number(txta.value)
+   var  IMC = p/(a)**2
+   IMC.toFixed (2)
+   res.innerHTML=`Seu IMC é ${IMC} <br>`
+    
+
+    if(IMC<18.5) {
+        res.innerHTML+=('Abaixo do Peso')
+        
+}
+
+else if (IMC<25){
+    res.innerHTML+=('Peso Normal')
+    
+
+}
+
+else if (IMC <25 && imc <=30){
+    res.innerHTML+=('Sobreso')
+
+}
+
+else {
+    res.innerHTML+=("Obesidade")
+}
+
+    }
+   
+
+</script>

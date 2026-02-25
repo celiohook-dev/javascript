@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio7</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+        #d1{
+            background-color: lightgrey;
+            width: 250px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        #res{
+            font-size: 20pt;
+        }
+    </style>
+
+</head>
+<body>
+    <p>Preço Mudou</p>
+    <div id="d1" onclick="verificar()">Verificar</div>
+    <p>Clique no botão acima para analisar a mudança de preço</p>
+
+    <div  id="res"></div>
+     <div id="res1"></div>
+    <script>
+
+        function verificar () {
+            let res1 = window.document.getElementById("res1")
+            let res = window.document.getElementById("res")
+           let  preco_anterior = window.prompt("Qual era o preço anterior do produto?")
+           let preco_atual = window.prompt("Qual é o preço atual do produto? ")
+            
+           res.innerHTML=("Analisando os valores informados ")
+           res1.innerHTML=(`O produto custava R${preco_anterior} e agora custa R$ ${preco_atual} `)
+          
+
+
+
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio6</title>
+    <style>
+        #d1{
+            background-color: lightgrey;
+            width: 250px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" onclick="desconto()">Desconto de 10%</div>
+    <div id="r"></div>
+    <div id="re"></div>
+    <div id="resul"></div>
+    <div id="rt"></div>
+
+    <script>
+       function desconto () {
+    let rt = window.document.getElementById("rt")    
+    let resul = window.document.getElementById("resul")
+    let re = window.document.getElementById("re")
+    let r = window.document.getElementById("r")
+    let prod = window.prompt("Qual é o produto que está comprando?")
+    let prec = window.prompt(`Qual é o preço de ${prod}`)
+
+     r.innerHTML=(`<h1> Calculando desconto de 10 % para ${prod} </h1>` )
+     
+     
+     let desconto = 10/100
+     
+      
+    
+     let valor_desconto = prec * desconto
+          preco_pagar = prec - valor_desconto   
+         valor_desconto=Number( valor_desconto.toFixed(2))
+         preco_pagar= Number(  preco_pagar.toFixed(2) )
+  
+     
+
+     re.innerHTML=(`O preço original era R$ ${prec} `)
+     resul.innerHTML=(`Voçe acaba de ganhar R$ ${valor_desconto}  (-10%)`)
+     valor_desconto.toFixed(2)
+     rt.innerHTML=(`No fim, voçe vai pagar ${preco_pagar} no produto ${prod}`)
+     
+
+       
+
+
+
+       }  
+    
+
+
+
+    </script>
+</body>
+</html>

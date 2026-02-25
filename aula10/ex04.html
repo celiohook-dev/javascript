@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerciçio</title>
+    <style>
+        body{
+            background-image: url('wallpaper002.jpg');
+            font: normal 10pt verdana;
+            
+        }
+        div#res{
+            color: skyblue;
+        }
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual é o seu País?</h1>
+  <input type="text" name="pais" id="pais">
+   <input type="button" value="Verificar" onclick="verificar()">
+   <div id="res">Resultado</div>
+</body>
+
+<script>
+
+ function verificar(){
+    var p = window.document.getElementById('pais')
+    var p=(pais.value)
+    var res=window.document.getElementById('res')
+    res.innerText=`Vivendo em ${p}`
+
+    if(p == 'Angola'){
+        res.innerHTML +=`<p> Angolano 👌😎!</p>`
+         
+    }
+
+    
+    else{
+        res.innerHTML +=` <br> <br> Estrageiro 🤣😅!`
+    }
+
+
+ }
+
+</script>
+</html>
