@@ -3,9 +3,9 @@ function carregar() {
     var img = window.document.getElementById('imagem')
     var data = new Date()
     var min = data.getMinutes()
-   //var hora =data.getHours ()
+    var hora = data.getHours ()
 
-   var hora = 22
+  
 
 
  

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+
+div{
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+    font-size: 15pt;
+    text-align: center;
+    background-color: blue;
+}
+
+button {
+    font-size: 15pt;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+
+}
+button:hover{
+    background-color: blue;
+}

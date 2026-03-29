@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        
+        div{
+            background-color: green;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            padding-bottom: 10px;
+            display: flex;
+           justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+
+        }
+        
+    </style>
+</head>
+<body>
+
+ <div id="btn" onclick="clicar()">Clica Aqui!</div>
+
+<script>
+
+function clicar () {
+     const btn = document.getElementById('btn').innerHTML='Clicou!'
+     btn.style.color="red"
+   
+    
+
+}
+   
+    
+</script>
+
+    
+</body>
+</html>

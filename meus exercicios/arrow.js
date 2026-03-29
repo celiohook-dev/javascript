@@ -42,3 +42,4 @@ const pessoas = [
 
 const nomes = pessoas.map ((pessoa)   => pessoa.nome)
 console.log(nomes)  
+
