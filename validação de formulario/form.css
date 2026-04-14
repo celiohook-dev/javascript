@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+main{
+    background-color: white;
+    display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+
+
+}
+form{
+    margin: 10px;
+    padding: 10px;
+
+}
+#entrar{
+    background-color: aquamarine;
+    border-radius: 5px;
+    font-size: 15pt;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.erro {
+    border:  2px solid rgb(214, 46, 46);
+
+}
